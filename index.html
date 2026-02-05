@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocosupe - Discover Your Next Favorite Anime</title>
+  <meta name="description" content="Discover anime, manga, characters, and more. Track your favorites and explore new series.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎌</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo" data-router>
+        <span>Anime</span>Hub
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="/" class="nav-link active" data-router>Home</a>
+        <a href="/search" class="nav-link" data-router>Search</a>
+        <a href="/top/anime" class="nav-link" data-router>Top Anime</a>
+        <a href="/season" class="nav-link" data-router>Season</a>
+        <a href="/schedule" class="nav-link" data-router>Schedule</a>
+        <a href="/watch" class="nav-link" data-router>Watch</a>
+        <a href="/random" class="nav-link" data-router>Random</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="/search" class="search-toggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content" id="app">
+    <!-- Content will be injected here by JavaScript -->
+    <div class="container" style="padding: 40px 20px;">
+      <div class="grid-section grid-6">
+        <!-- Skeleton loading -->
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-image"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3><span>Anime</span>Hub</h3>
+          <p>Your ultimate destination for anime and manga discovery. Built with Jikan API.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Discover</h4>
+          <ul>
+            <li><a href="/top/anime" data-router>Top Anime</a></li>
+            <li><a href="/season" data-router>Seasonal Anime</a></li>
+            <li><a href="/schedule" data-router>Schedule</a></li>
+            <li><a href="/random" data-router>Random</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/search?type=anime" data-router>Anime</a></li>
+            <li><a href="/search?type=manga" data-router>Manga</a></li>
+            <li><a href="/search?type=character" data-router>Characters</a></li>
+            <li><a href="/search?type=people" data-router>People</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://jikan.moe" target="_blank">Jikan API</a></li>
+            <li><a href="https://myanimelist.net" target="_blank">MyAnimeList</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; ${new Date().getFullYear()} Chocosupe. Data provided by Jikan API. Not affiliated with MyAnimeList.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
